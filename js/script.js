@@ -153,3 +153,26 @@ console.log(outResult)
 // Snack 3 (Bonus)
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
+
+let OurArray = []
+const numMIN  = prompt("inserisci la posizione da cui partire a contare")
+const numMAX = prompt("inserisci la posizione fino dove contare")
+let BaseArray =[]
+for ( let i = 0; i <= 1000; i++){
+    BaseArray.push(i + 1)
+}
+
+function countPlease (min, max, arrayx) {
+    const counting = []
+     for (let i = min ; i <= max; i++ ){
+        counting.push(arrayx[i])
+     }
+     return counting
+
+}
+
+
+
+OurArray = countPlease(numMIN, numMAX, BaseArray)
+console.log(OurArray)
+
